@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>signup form</title>
+    <style>
+
+    .mm{
+        margin-left: 490px;
+        border: 2px solid;
+        padding-left: 50px;
+        width: 600px;
+        background-color: blueviolet;
+        
+        height: 900px;
+        padding-top: 80px;
+    }
+    [type="text"]{
+        position: relative;
+        left: 60px;
+    }
+    [type="radio"]{
+        position: relative;
+        left: 40px;
+    }
+    .g
+    {
+        position: relative;
+        left: 40px;
+    }
+    [type="email"]{
+        position: relative;
+        left: 70px;
+    }
+    [type="datetime-local"]{
+        position: relative;
+        left: 35px;
+    }
+   .pp
+    {
+        position: relative;
+        left: 52px;
+    }
+    .ss{
+        position: relative;
+        left: 85px;
+    }
+    .kk{
+        position: relative;
+        left: 83px;
+    }
+    [type="password"]{
+        position: relative;
+        left: 50px;
+    }
+    .aa{
+        position: relative;
+        left: -3px;
+    }
+    textarea
+    {
+        position: relative;
+        left: 40px;
+    }
+    [type="submit"]{
+        position: relative;
+        left: 200px;
+        font-size: 20px;
+    }
+    [type="reset"]{
+        position: relative;
+        font-size:20px ;
+        left: 70px;
+    }
+</style>
+
+<body>
+    <fieldset>
+    <legend><h1>Registration form</h1></legend>
+    
+    <div class="mm">
+        <h3>
+    <form method="post">
+        <label for="n"><b>Name :</b> </label>
+        <input placeholder="First Name" type="text" id="n" name="Secondname" />
+        <input placeholder="Second Name" type="text" id="n" name="Secondname" /><br><br>
+        <label><b>Gender :</b> </label>
+        <input id="male" type="radio" name="Gender">
+        <label class="g" for="male">Male</label>
+        <input  id="female" type="radio" name="Gender">
+        <label class="g" for="female">Female</label>
+        <input id="le" type="radio" name="Gender">
+        <label class="g" for="le">Others</label><br><br>
+        <label><b>Mobile Number : </b></label>
+        <input type="tel" pattern="[0-9]{10}"><br><br>
+        <label><b>E-Mail : </b></label>
+        <input type="email"><br><br>
+<label><b>Date & Time</b></label>
+<input type="datetime-local">
+
+        <br><br><label for="a"><b>Address :</b> </label>
+        <input placeholder="Street Address" type="text" id="a" name="Street" />
+        <input placeholder="Nearby Area" type="text" id="n" name="Nearby Area" /><br><br>
+        <label><b>Zip Code :</b></label>
+        <input type="tel" pattern="[0-9]{6}" class="pp" />
+        <label class="pp"><b>District : </b></label>
+        <select type="dropdown" name="District" class="pp">
+
+            <option value="Anantapur">Anantapur</option>
+            <option value="Srikakulam">Srikakulam</option>
+            <option value="Vizag">Vizag</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Amaravathi">Amaravathi</option>
+        </select><br><br>
+        <label><b>State : </b></label>
+        <select type="dropdown" name="State" class="ss">
+            <option value=""></option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="TS">Telangana State</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="MP">Madhya Pradesh</option>
+            
+        </select><br><br>
+
+        <label><b>Skills : </b></label>
+        <select type="dropdown" name="Skills" class="kk">
+            <option value=""></option>
+            <option value="Java">Java</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+        
+        </select><br><br>
+
+        <label><b>Password : </b></label>
+        <input type="password" pattern="[0-9]{5,}">
+
+        <br><br>
+
+        <label><b>Confirm Password : </b></label>
+        <input class="aa" type="password" pattern="[0-9]{5,}">
+
+       <br><br> <label><b>Drop Your File : </b></label>
+        <input type="file"></br>
+
+  
+
+       <label><b>Description : </b></label>
+       <textarea placeholder="Min 20 words"></textarea>
+
+
+
+      
+       
+
+<br><br><input type="reset">
+        <input type="submit">
+    </h3>
+</fieldset>
+    </form>
+</div>
+</body>
+
+</html>
